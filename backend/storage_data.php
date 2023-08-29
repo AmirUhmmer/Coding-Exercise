@@ -33,7 +33,7 @@ class storage_data extends db_connect {
     }
 
     public function display_boxes_on_storage(){
-        //get all the large boxes that are stored.
+        //get all the boxes that are stored.
         $con = $this->connect();
         $sql_query = "SELECT * FROM user_info WHERE package_state = '1' ORDER BY package_size DESC";
         $query_result = mysqli_query($con,$sql_query);
